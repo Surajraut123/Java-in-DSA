@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class InitializeNumberInArray {
-    ImplNumberToInteger numToInt = new ImplNumberToInteger();
+    ImplSingleNumberToInteger numToInt = new ImplSingleNumberToInteger();
     ImplNumberToReverseInteger numArr = new ImplNumberToReverseInteger();
     public void initArray() {
         Scanner sc = new Scanner(System.in);

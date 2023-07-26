@@ -2,7 +2,7 @@ package numbersToIntegervalue;
 
 import java.util.ArrayList;
 
-public class ImplNumberToInteger {
+public class ImplSingleNumberToInteger {
     public void impl(ArrayList<Integer> numbers) {
         int ans = 0;
         int i=0;
