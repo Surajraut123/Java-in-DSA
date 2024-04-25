@@ -14,7 +14,7 @@ public class PeakIndexofMountainArray {
             arr[i] = sc.nextInt();
         }
 
-        //The below solutions we can apply binary search only if array is montain format
+        //The below solutions we can apply binary search only if array is mountain format
 
 
         //Here guarantee is array is mountain like 3 4 5 6 7 1 2 3
@@ -22,7 +22,7 @@ public class PeakIndexofMountainArray {
         binarySearch(arr, sizeOfArray);
 //        peakByPointing0thPosition(arr, sizeOfArray);
     }
-    public static void binarySearch(int arr[], int n) {
+    public static void binarySearch(int[] arr, int n) {
         int i=0;
         int j=n-1;
         int mid = 0;
@@ -38,7 +38,7 @@ public class PeakIndexofMountainArray {
         System.out.println("Peak Element is : " + arr[j]);
     }
 
-    public static void peakByPointing0thPosition(int arr[], int n) {
+    public static void peakByPointing0thPosition(int[] arr, int n) {
         int i=0;
         int j=n-1;
         int mid=0;

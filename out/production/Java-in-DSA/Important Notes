@@ -1,0 +1,82 @@
+When we declare array like :
+    int arr[] = new int[size];
+Then initially all the values is declared as 0.
+
+--------------------------------------------------------------
+In cpp : max-heap
+priority_queue<int> pq;
+: Here by default values stores in descending order. Max values comes first
+
+Min-heap :
+priority_queue<int, vector<int>, greater<int>> pq;
+: Here by default values stores in ascending order. min values comes first
+----------------------------------------------------------------------------------
+In Java : min-heap
+PriorityQueue<Integer> element = new PriorityQueue<>();
+: Here by default values stores in ascending order. min values comes first
+
+To make max-heap :
+PriorityQueue<Integer> element = new PriorityQueue<>(Comparator.reverse());
+------------------------------------------------------------------------------------
+We not allow to pass the reference of an primitive data types value directly.
+we wrap the primitive DataType values in AtomicInteger objects and pass those objects to the functions.
+Like :
+AtomicInteger a = new AtomicInteger(aValue);
+AtomicInteger b = new AtomicInteger(bValue);
+
+we use the get and set methods of AtomicInteger to manipulate the values
+public static void swap(AtomicInteger a, AtomicInteger b) {
+    int temp = a.get();
+    a.set(b.get());
+    b.set(temp);
+}
+
+=============================================================================================================
+In both C++ and Java, a "set" (or equivalent) data structure stores unique values. It uses self balancing binary Search tree (Red-Black tree)
+-> In C++, set maintains ascending order,
+           unordered_set does not maintain order.
+Functions :
+st.insert()
+st.erase()
+st.count() o/p : 1 or 0
+st.size()
+st.find()
+st.empty()
+Works for orderedSet only : st.lower_bound(), st.upper_bound()
+
+                    ------------------#####---------------------------
+
+-> In Java, HashSet does not maintain order, It uses hash table
+            TreeSet maintains elements in ascending order.
+st.add()
+st.remove()
+st.size()
+st.isEmpty()
+
+Same for both
+-----------------------------------------------------------------------------
+In both C++ and Java, a "map" (or equivalent) data structure stores key-value pairs.
+-> In C++, std::map maintains ascending order by default and enforces unique keys.
+           std::unordered_map does not maintain order but enforces unique keys.
+
+           Also all the operations is handling like insertion, deletion... they all are interates in O(1) t.c
+           in Unordered map only in cpp and HashMap, LinkedHashMap in java takes Constant time complexity
+           while in ordered map it takes O(n) T.C
+
+           Tree map  : Takes O(logn) time complexity
+
+map["one"] = 1;
+map["two"] = 2;
+// Get an iterator pointing to the first element in the map
+map<string, int>::iterator it = map.begin();
+
+map<int, int> mp;
+
+// insert elements in random order
+mp.insert({ 2, 30 });
+mp.insert({ 1, 40 });
+mp.insert({ 3, 60 });
+
+
+-> In Java, HashMap does not maintain order and enforces unique keys.
+            TreeMap maintains ascending order by default and enforces unique keys.

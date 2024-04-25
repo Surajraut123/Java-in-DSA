@@ -13,7 +13,7 @@ public class ImplNumberToReverseInteger {
         System.out.println("Parameterized Constructor Called");
         int i=0;
         int ans=0;
-        while(i<number.size()){
+        while(i<number.size()) {
             int digit = number.get(i);
             ans = (int) (digit*pow(10,i)+ans);
             i++;
