@@ -10,11 +10,9 @@ public class ReverseIntegerValue {
         Scanner sc = new Scanner(System.in);
         int decimalValue = sc.nextInt();
         int ans=0;
-        int i=0;
         while(decimalValue!=0) {
             int digit = decimalValue%10;
             ans = ans*10 + digit;
-            i++;
             decimalValue = decimalValue/10;
         }
         System.out.println("Reverse of Integer Value : " + ans);

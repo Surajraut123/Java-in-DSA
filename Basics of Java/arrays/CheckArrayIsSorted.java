@@ -3,7 +3,7 @@ package arrays;
 import java.util.Scanner;
 
 public class CheckArrayIsSorted {
-    public static boolean checkArrayIsSorted(int arr[]) {
+    public static boolean checkArrayIsRotatedAndSorted(int arr[]) {
         int count=0;
         for(int i=1;i<arr.length;i++) {
             if(arr[i-1]>arr[i]){
@@ -25,7 +25,7 @@ public class CheckArrayIsSorted {
             arr[i] = sc.nextInt();
         }
 
-        boolean check = checkArrayIsSorted(arr);
+        boolean check = checkArrayIsRotatedAndSorted(arr);
         System.out.println(check ? "Rotated and Sorted" : "Not Rotated and Sorted");
     }
 }

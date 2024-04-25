@@ -52,6 +52,8 @@ public class PivotIndexLeftRightSumEqual {
             } else{
                 i++;
                 j--;
+                rightsum+=nums[j];
+                leftsum+=nums[i];
             }
 //            System.out.println("Leftsum : " + leftsum + " Rightsum : " + rightsum + " i : "+i+" j : " + j);
         }

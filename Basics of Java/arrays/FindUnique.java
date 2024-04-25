@@ -29,7 +29,7 @@ public class FindUnique {
         int[] arr = getarray();
         int ans = 0;
         for (int i : arr) {
-            ans = ans ^ i;
+        ans = ans ^ i;
         }
         System.out.println("Unique Number: " + ans);
     }

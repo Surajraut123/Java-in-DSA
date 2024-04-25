@@ -54,12 +54,12 @@ public class PowerOf2 {
         boolean EfficentApproach = powerApproach(value);
         if(check) {
             System.out.println("Matched");
-        }else{
+        } else{
             System.out.println("Not Matched");
         }
         if(EfficentApproach) {
             System.out.println("Matched in bitset");
-        }else{
+        } else{
             System.out.println("Not Matched in bitset");
         }
 

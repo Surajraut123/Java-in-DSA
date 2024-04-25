@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BubbleSort {
 
-    public static void bubbleSort(int arr[], int n) {
+    public static void bubbleSort(int[] arr, int n) {
         boolean check = false;
         for(int i=1;i<n;i++) {
             for(int j=0;j<n-i;j++) {
@@ -25,7 +25,7 @@ public class BubbleSort {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Size : ");
         int size = sc.nextInt();
-        int arr[] = new int[size];
+        int[] arr = new int[size];
         System.out.println("Enter the element : ");
         for(int i=0;i<size;i++) {
             arr[i] = sc.nextInt();
@@ -33,8 +33,8 @@ public class BubbleSort {
 
         bubbleSort(arr, size);
         System.out.println("Sorted Array : ");
-        for(int i=0;i<size;i++) {
-            System.out.println(arr[i]);
+        for (int j : arr) {
+            System.out.println(j);
         }
     }
 }
